@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.ui-menu{
+    z-index: 1000 !important;
+}
+
+/* Nút Dropdown*/
+.nut_dropdown {
+    color: white;
+    font-size: 16px;
+    border: none;
+  }
+ /* Thiết lập vị trí cho thẻ div với class dropdown*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+ /* Nội dung Dropdown */
+  .noidung_dropdown {
+    /*Ẩn nội dụng các đường dẫn*/
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1CC;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    margin-right: 30px;
+  }
+ /* Thiết kế style cho các đường dẫn tronng Dropdown */
+  .noidung_dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .noidung_dropdown a:hover{
+    background-color: #00A2A2;
+  }
+  .hienThi{
+    display:block;
+  }
+
+/*main*/
+main{
+    min-height: 800px;
+}
+
+.add-cart{
+    border: none;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    color: #6C757D;
+}
+.add-cart:hover{
+    color: #0063a9;
+}
+.detail{
+    margin-top: 5px;
+}
+.detail .detail-product{
+    text-decoration: none;
+    color: #0088a9;
+}
+
+.cartBtn{
+  font-size: 30px;
+  padding: 2px 8px;
+  border-radius: 50%;
+  color: #0189e9;
+
+  position: absolute;
+  top: 80%;
+  right: 5%;
+
+}
+.cartBtn:hover{
+  color: #034a7c;
+}
+
+
+
+/* img */
+.hover-2::after {
+    content: '';
+    width: calc(100%);
+    height: calc(268px);
+    background-color: #9999997c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.3s;
+    transform: scale(1.1);
+    opacity: 0;
+    display: block;
+    opacity: 0;
+  }
+
+  .hover-2:hover::after {
+    opacity: 1;
+    transform: none;
+  }
+
+.hover-2 .hover-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  }
+  
+  .hover-2-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  
+  .hover-2-description {
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    opacity: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  
+  .hover-2:hover .hover-2-title {
+    transform: translateY(-1.5rem);
+  }
+  
+  .hover-2:hover .hover-2-description {
+
+    opacity: 1;
+  }
+  
+  .hover-2:hover .hover-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  }
+
+
+
+/*footer*/
+footer{
+  background-color: #00a2a22a;
+}
+
+footer section a{
+    color: #6C757D;
+    text-decoration: none;
+    display: flex;
+}
+hr{
+    color: #6C757D;
+}
+
+footer i{
+    font-size: 25px;
+}
+
+.title-product{
+    margin: 10px 0;
+    font-size: 30px;
+}
+.border-product #product-frame input{
+    margin-bottom: 30px;
+}
+
+.border-product .infomation{
+    text-align: center;
+    font-size: 20px;
+}
+.border-product .infomation label{
+    margin: 20px 0;
+}
+
+/* image avatar */
+
+.file-upload {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px solid #1FB264;
+  position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #1FB264;
+  border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #15824B;
+  padding: 10px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
